@@ -1,0 +1,32 @@
+ext.versions = [
+        //persistence
+        dbflow : '4.2.4',
+        junit  : '4.12',
+        rxjava : '2.1.4',
+        easymvp: '1.2.0-beta10'
+]
+
+ext.libs = [
+
+        //persistence
+        dbflow            : "com.github.Raizlabs.DBFlow:dbflow:$versions.dbflow",
+        dbflowCore        : "com.github.Raizlabs.DBFlow:dbflow-core:$versions.dbflow",
+        dbflowExtensions  : "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions:$versions.dbflow",
+        dbflowRx2         : "com.github.Raizlabs.DBFlow:dbflow-rx2:$versions.dbflow",
+        dbflowRx2Extension: "com.github.Raizlabs.DBFlow:dbflow-rx2-kotlinextensions:$versions.dbflow",
+        dbflowProcessor   : "com.github.Raizlabs.DBFlow:dbflow-processor:$versions.dbflow",
+//tests
+        junit             : "junit:junit:$versions.junit",
+
+        //rx
+        rxjava            : "io.reactivex.rxjava2:rxjava:$versions.rxjava"
+
+
+]
+ext.gradlePlugins = [
+
+
+        easymvp                : "com.sixthsolution.easymvp:easymvp-plugin:$versions.easymvp"
+
+
+]

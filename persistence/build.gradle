@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testApplicationId "com.bigoloo.finance.home.persistance.test"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    api libs.dbflow
+    api libs.dbflowCore
+    api libs.dbflowExtensions
+    api libs.dbflowRx2
+    api libs.dbflowRx2Extension
+    // kapt libs.dbflowProcessor
+
+
+}
+/*
+kapt {
+    generateStubs = true
+}*/
