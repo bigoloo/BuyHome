@@ -13,7 +13,7 @@ import com.raizlabs.android.dbflow.rx2.structure.BaseRXModel
 @Table(database = AppDatabase::class)
 class HomeDAO(@Column @PrimaryKey(autoincrement = true) var id: Int = 0,
               @Column var name: String,
-              @Column var agency: String,
+              @Column var agency: String?,
               @Column var timestamp: Long = -1,
               @Column var isVisit: Boolean = false,
               @Column var timeToVisit: Long = -1,

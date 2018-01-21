@@ -1,1 +1,1 @@
-include ':app', ':persistence', ':data-layer', ':domain-layer'
+include ':presentation', ':persistence', ':data-layer', ':domain-layer'

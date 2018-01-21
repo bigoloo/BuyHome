@@ -1,32 +1,45 @@
 ext.versions = [
         //persistence
-        dbflow : '4.2.4',
-        junit  : '4.12',
-        rxjava : '2.1.4',
-        easymvp: '1.2.0-beta10'
+        dbflow     : '4.2.4',
+        junit      : '4.12',
+        rxjava     : '2.1.4',
+        easymvp    : '1.2.0-beta10',
+        dagger     : '2.11',
+        kotlin     : '1.2.20',
+        conductor  : '2.1.4',
+        kotterknife: '0.1.0-SNAPSHOT',
+        butterknife: '8.8.1'
 ]
 
 ext.libs = [
 
         //persistence
-        dbflow            : "com.github.Raizlabs.DBFlow:dbflow:$versions.dbflow",
-        dbflowCore        : "com.github.Raizlabs.DBFlow:dbflow-core:$versions.dbflow",
-        dbflowExtensions  : "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions:$versions.dbflow",
-        dbflowRx2         : "com.github.Raizlabs.DBFlow:dbflow-rx2:$versions.dbflow",
-        dbflowRx2Extension: "com.github.Raizlabs.DBFlow:dbflow-rx2-kotlinextensions:$versions.dbflow",
-        dbflowProcessor   : "com.github.Raizlabs.DBFlow:dbflow-processor:$versions.dbflow",
+        dbflow                  : "com.github.Raizlabs.DBFlow:dbflow:$versions.dbflow",
+        dbflowCore              : "com.github.Raizlabs.DBFlow:dbflow-core:$versions.dbflow",
+        dbflowExtensions        : "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions:$versions.dbflow",
+        dbflowRx2               : "com.github.Raizlabs.DBFlow:dbflow-rx2:$versions.dbflow",
+        dbflowRx2Extension      : "com.github.Raizlabs.DBFlow:dbflow-rx2-kotlinextensions:$versions.dbflow",
+        dbflowProcessor         : "com.github.Raizlabs.DBFlow:dbflow-processor:$versions.dbflow",
 //tests
-        junit             : "junit:junit:$versions.junit",
+        junit                   : "junit:junit:$versions.junit",
 
         //rx
-        rxjava            : "io.reactivex.rxjava2:rxjava:$versions.rxjava"
-
-
+        rxjava                  : "io.reactivex.rxjava2:rxjava:$versions.rxjava",
+        dagger                  : "com.google.dagger:dagger:$versions.dagger",
+        daggerCompiler          : "com.google.dagger:dagger-compiler:$versions.dagger",
+        kotlin                  : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin",
+        conductor               : "com.bluelinelabs:conductor:$versions.conductor",
+        "conductorSupport"      : "com.bluelinelabs:conductor-support:$versions.conductor",
+        "conductorLifecycle"    : "com.bluelinelabs:conductor-rxlifecycle2:$versions.conductor",
+        "conductorAutodispose"  : "com.bluelinelabs:conductor-autodispose:$versions.conductor",
+        "conductorArchlifecycle": "com.bluelinelabs:conductor-archlifecycle:$versions.conductor",
+        "kotterknife"           : "com.jakewharton:kotterknife:$versions.kotterknife",
+        butterknife             : "com.jakewharton:butterknife:$versions.butterknife"
 ]
 ext.gradlePlugins = [
 
 
-        easymvp                : "com.sixthsolution.easymvp:easymvp-plugin:$versions.easymvp"
+        easymvp: "com.sixthsolution.easymvp:easymvp-plugin:$versions.easymvp"
 
 
 ]

@@ -1,9 +1,11 @@
 package com.bigoloo.finance.home.data.repository
 
+import com.bigoloo.finance.home.data.mapper.mapToDao
 import com.bigoloo.finance.home.data.mapper.mapToEntity
 import com.bigoloo.finance.home.domain.entity.Home
 import com.bigoloo.finance.home.domain.repository.HomeRepository
 import com.bigoloo.finance.home.persistance.HomeDAO
+import com.raizlabs.android.dbflow.config.DatabaseConfig
 import com.raizlabs.android.dbflow.kotlinextensions.from
 import com.raizlabs.android.dbflow.kotlinextensions.select
 import com.raizlabs.android.dbflow.rx2.kotlinextensions.list
@@ -17,9 +19,21 @@ import io.reactivex.Single
 
 
 class HomeRepositoryImp : HomeRepository {
-    override fun save(home: Home): Completable {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun saveHome(home: Home?): Single<Boolean> {
+
+
+        val mapToDao = home?.mapToDao()
+        return if (mapToDao != null) {
+            mapToDao.save().map({
+
+                return@map it
+            })
+
+        } else {
+            Single.just(false)
+        }
     }
+
 
     override fun getAll(): Single<List<Home>> {
 

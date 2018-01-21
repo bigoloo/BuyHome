@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BuyHome.iml" filepath="$PROJECT_DIR$/BuyHome.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-layer/data-layer.iml" filepath="$PROJECT_DIR$/data-layer/data-layer.iml" />
       <module fileurl="file://$PROJECT_DIR$/domain-layer/domain-layer.iml" filepath="$PROJECT_DIR$/domain-layer/domain-layer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/persistence/persistance.iml" filepath="$PROJECT_DIR$/persistence/persistance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/persistence/persistence.iml" filepath="$PROJECT_DIR$/persistence/persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/presentation/presentation.iml" filepath="$PROJECT_DIR$/presentation/presentation.iml" />
     </modules>
   </component>
 </project>

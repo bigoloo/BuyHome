@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'easymvp-rx2'
 
-apply plugin: 'easymvp'
 
 android {
     compileSdkVersion 26
@@ -28,8 +29,10 @@ android {
 
 dependencies {
     api libs.rxjava
-
+    api libs.dagger
+    api libs.kotlin
 }
 repositories {
     mavenCentral()
 }
+

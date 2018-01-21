@@ -12,5 +12,5 @@ import io.reactivex.Single
 interface HomeRepository {
 
     fun getAll(): Single<List<Home>>
-    fun save(home: Home): Completable
+    fun saveHome(home: Home?): Single<Boolean>
 }
